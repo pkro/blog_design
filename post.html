@@ -2,11 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="mainContent">
 
-<script src="script.js"></script>
+    <section>
+        <nav class="topNav">
+            <div class="logo"></div>
+            <ul>
+                <li><a class="plain navLink" href="/">Home page</a></li>
+                <li><a class="button navLink" href="/">Subscribe for updates</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <article class="post">
+                <img src="https://picsum.photos/1200/1200?1234asd5" alt="nada">
+                <div class="postOverview">
+                    <div class="overviewTop">
+                        <div class="overviewTopControls">
+                            <a href="index.html">&lt; back to posts</a>
+                            <div class="categoryButtons">
+                                <a class="button" href="#">Fun</a>
+                                <a class="button" href="#">Serious</a>
+                            </div>    
+                        </div>
+                        
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                        <div class="published">Published 1 day ago</div>
+                        <div class="excerpt">
+                            <p>excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium, debitis
+                                deleniti, deserunt dolores enim excepturi exercitationem explicabo incidunt laborum
+                                odit,
+                                officiis pariatur quod recusandae rem repellendus sit soluta vitae.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad atque earum impedit magni modi molestias, officia, officiis placeat reiciendis rerum sapiente sequi sit! Architecto debitis laboriosam qui reiciendis repellat! Accusamus delectus fugiat officiis quam, quia quos vero? Blanditiis consequuntur culpa cumque eos harum iusto laboriosam, laudantium magnam, natus nemo nisi numquam provident quae quibusdam quidem ut velit? Ab alias culpa, dolor eligendi id ipsa iste laudantium nihil nulla, pariatur perspiciatis quaerat quis quisquam saepe sit soluta tempore temporibus voluptatibus? Ab architecto dolorum error esse eum maxime, omnis quo recusandae! Adipisci delectus, dolores eos in minima placeat porro qui quis?</p>
+                        </div>
+                    </div>
+                    <div class="authorRow">
+                        <a href="#authorlink" class="author">
+                            <img class="avatar" src="https://picsum.photos/30/30" alt="avatar">
+                            <div class="div">PKRO</div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <img src="https://picsum.photos/80/80?123445" alt="nada">
+            <div>
+                <h2>Stay in touch with the latest posts</h2>
+                <span>Promise to keep your inbox clean!</span>
+            </div>
+            <form method="POST" action="#" class="lg:flex text-sm">
+                <div class="lg:py-3 lg:px-5 flex items-center">
+                    <label for="email" class="hidden lg:inline-block">
+                        <img src="images/mailbox-icon.svg" alt="mailbox letter">
+                    </label>
+
+                    <input id="email" type="text" placeholder="Your email address"
+                           class="lg:bg-transparent py-2 lg:py-0 pl-4 focus-within:outline-none">
+                </div>
+
+                <button type="submit"
+                        class="button">
+                    Subscribe
+                </button>
+            </form>
+
+        </footer>
+    </section>
+</div>
+
 </body>
+<script src="script.js"></script>
+
 </html>

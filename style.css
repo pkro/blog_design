@@ -10,15 +10,13 @@ body {
     background: #eeeeee;
     padding: 0;
     margin: 0;
+    background: linear-gradient(to right, rgba(255, 140, 0, 0.8) 0%, #FFFFFF 30%);
 }
 
 .mainContent {
     transform: translate(-150vw);
-    border: 1px solid black;
     width: 100%;
-
     height: 100%;
-    background: linear-gradient(to right, rgba(255, 140, 0, 0.8) 0%, #FFFFFF 60%);
     color: white;
     transition: transform 0.2s 0s ease-out;
     padding: 0.3em;
@@ -37,7 +35,7 @@ nav {
     justify-content: space-between;
 }
 
-nav a, nav a:hover, nav a:active {
+a, a:hover, a:active {
     text-decoration: none;
     display: inline-block;
 }
@@ -74,6 +72,7 @@ nav .plain {
     border-radius: 999px;
     background: dodgerblue;
     color: white;
+    cursor: pointer;
 }
 
 section > header {
@@ -86,17 +85,17 @@ section > header {
     justify-content: space-evenly;
 }
 
-.controls input {
+input {
     border-radius: 5px;
     outline: none;
     background-color: transparent;
-
 }
 
 main {
     margin-top: 1em;
     display: grid;
     grid-template-columns: [first] repeat(3, 1fr) [middle] repeat(3, 1fr) [end];
+    grid-gap: 1em;
 
 }
 
@@ -162,9 +161,9 @@ article:first-of-type .postOverview {
 
 .authorRow .button {
     background: silver;
-    border-radius: 999px;
-    border: 0;
     text-decoration: none;
+    transition: all 0.2s 0s;
+    height: max-content;
 }
 
 article:hover .button {
@@ -206,6 +205,46 @@ article img {
     margin-right: 0.5em;
 }
 
+footer {
+    text-align: center;
+    margin-top: 2em;
+    background: rgba(243,244,246,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 260px;
+    border-radius: 5px;
+    
+    
+}
+
+footer > img {
+    border-radius: 5px;
+    width: 80px;
+    margin: 0.7em auto 0.7em auto;
+}
+
+footer button {
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+/* post page */
+
+.post > img {
+    max-width: 160px;
+    height: 160px;
+    float: left;
+ }
+
+.overviewTopControls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post .overviewTop > a {
+ 
+}
 
 
 /*Animation stuff*/
